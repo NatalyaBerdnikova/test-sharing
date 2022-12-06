@@ -7,7 +7,7 @@
       <button @click="makeRepost">Сделать репост поста</button>
     </div>
     <!-- <div id="vk_like">LikeWidget</div> -->
-    <div id="vk_post_-33118207_31542974" />
+    <!-- <div id="vk_post_-33118207_31542974" /> -->
   </div>
 </template>
 
