@@ -31,13 +31,13 @@ export default {
     // );
     // It is not working
     window.VK.Observer.subscribe("widgets.post.shared", () => {
-      console.log("widgets.post.shared");
-      alert("Thank you for your shared.");
+      console.info("widgets.post.shared");
+      // alert("Thank you for your shared.");
     });
   },
   methods: {
     authorizeVk() {
-      console.log("authorizeVk");
+      console.info("authorizeVk");
       this.user_data = window.VK.Auth.login();
     },
     makeRepost() {
@@ -52,7 +52,7 @@ export default {
         },
         function (res) {
           if (res.response) {
-            alert(res.response);
+            console.info(res.response);
           }
         }
       );
