@@ -42,7 +42,12 @@ export default {
     },
     makeRepost() {
       // TODO I can't find desired method
-      window.VK.Api.call("");
+      window.VK.Api.call("stories.save", {
+        // eslint-disable-next-line
+        v: "5.73",
+        upload_results:
+          "https://sun3-12.userapi.com/impg/WhGj_BnshuacWE8dAZvPtoRKQcpzHHtFg5vq8g/veSUdVx3_Ng.jpg?size=1080x1080&quality=95&sign=43524f9d9201c7e961a23fd09eb2a06d&type=album",
+      });
     },
   },
 };
